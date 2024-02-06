@@ -15,12 +15,15 @@ body {
 } */
 
 .card-img {
+  display: flex;
   background-color: black;
-  width: 475px;
-  height: 225px;
+  width: 50%;
+  height: 100%;
   border-radius: 14px;
   padding: 8px;
   border: solid 1px black;
+  align-items: flex-start;
+  justify-content: center;
 }
 .imgf5 {
   width: 85px;
