@@ -3,14 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mostrar Imágenes</title>
+    <title>Ngeek app</title>
+    <style>
+        body {
+            background-color: #022243;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .card {
+            width: 45%;
+            padding: 20px;
+            border-radius: 14px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 14px;
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Imágenes</h1>
-    <div>
-        {% for imagen in imagenes %}
-            <img src="{{ url_for('static', filename='images/' + imagen) }}" alt="{{ imagen }}">
-        {% endfor %}
+    <h1 style="color: white;">Imágenes</h1>
+    <div class="card-container">
+        <div class="card">
+            <h2>F5 Logo</h2>
+            <img src="{{ url_for('static', filename='images/f5-logo.png') }}" alt="F5 Logo">
+        </div>
+        <div class="card">
+            <h2>nGeek Imagotipo</h2>
+            <img src="{{ url_for('static', filename='images/ngeekImagotipo.png') }}" alt="nGeek Imagotipo">
+        </div>
+    </div>
+    <div class="card">
+        <h2>Mensaje</h2>
+        <p>Hola mundo!</p>
+        <p>IP: 192.168.0.1</p>
     </div>
 </body>
 </html>
