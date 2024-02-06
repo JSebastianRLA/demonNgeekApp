@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mostrar Imágenes</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" id="theme">
-</head>
-<body>
-    <h1>Imágenes</h1>
-    <div class="footer">
-        <img src="{{ url_for('static', filename='images/f5-logo.png') }}" alt="F5 Logo">
-        <img src="{{ url_for('static', filename='images/ngeekImagotipo.png') }}" alt="nGeek Imagotipo">
-        <img src="{{ url_for('static', filename='images/ngeekTipografiWithe.png') }}" alt="nGeek Tipografía">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+      id="theme"
+    />
+  </head>
+  <body>
+    <h1>Ngeek App</h1>
+    <div class="card-info">
+      <h2>Mensaje</h2>
+      <p>Hola mundo!</p>
+      <p>IP: 192.168.0.1</p>
     </div>
-    <div>
-        <h2>Mensaje</h2>
-        <p>Hola mundo!</p>
-        <p>IP: 192.168.0.1</p>
-    </div>
-    <label class="switch">
-        <input type="checkbox" id="modeToggle">
-        <span class="slider round"></span>
-    </label>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-</body>
+    <footer>
+      <div class="card-img">
+        <img
+          src="{{ url_for('static', filename='images/f5-logo.png') }}"
+          alt="F5 Logo"
+        />
+      </div>
+      <div class="card-img">
+        <img
+          src="{{ url_for('static', filename='images/ngeekTipografiWithe.png') }}"
+          alt="Ngeek Tipografía"
+        />
+      </div>
+    </footer>
+  </body>
 </html>
