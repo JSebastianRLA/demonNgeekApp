@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer img {
+    width: 100px;
+    margin: 0 10px;
+}
