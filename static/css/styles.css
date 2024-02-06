@@ -22,55 +22,64 @@ body {
   padding: 8px;
   border: solid 1px black;
 }
-.card-img img{
-    width: 450px;
-    height: 200px;
+.imgf5 {
+  width: 85px;
+  height: 65px;
+}
+.imgNgeek {
+  width: 220px px;
+  height: 100px;
 }
 
 .card-info1 {
-    background-color: black;
-    width: 45%;
-    margin-right: 5px;
-    height: 450px;
-    border-radius: 14px;
-    padding: 8px;
-    border: solid 1px black;
-    overflow-y: scroll;
-    overflow-x: scroll ;
-    color: white;
+  background-color: black;
+  width: 45%;
+  margin-right: 5px;
+  height: 434px;
+  border-radius: 14px;
+  padding: 8px;
+  border: solid 1px #fff;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  color: white;
 }
 .card-info2 {
-    background-color: black;
-    width: 45%;
-    margin-left: 5px;
-    height: 450px;
-    border-radius: 14px;
-    /* padding: 8px; */
-    border: solid 1px black;
-    overflow-y: scroll;
-    overflow-x: scroll ;
-    color: white;
+  background-color: #000;
+  width: 45%;
+  margin-left: 5px;
+  height: 450px;
+  /* border-radius: 14px; */
+  padding: 8px;
+  border: solid 1px black;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+.subcar-info3 {
+  background-color: black;
+  /* width: 45%; */
+  /* margin-left: 5px; */
+  height: 80px;
+  border-radius: 14px;
+  padding: 4px;
+  border: solid 1px #fff;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  /* margin: 5px 0; */
+}
 
+.FlexH {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-.subcar-info3{
-    background-color: black;
-    /* width: 45%; */
-    /* margin-left: 5px; */
-    height: 200px;
-    border-radius: 14px;
-    padding:4px;
-    border: solid 1px black;
-    overflow-y: scroll;
-    overflow-x: scroll ;
-}
-.FlexH{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-.FlexDivInf{
-    display: flex;
-    justify-content:center;
-    align-items: center;
+.FlexDivInf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
