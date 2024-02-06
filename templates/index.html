@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -45,4 +45,58 @@
       </div>
     </footer>
   </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Imágenes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" id="theme">
+</head>
+<body>
+    <div>
+        <h1 class="FlexH">Ngeek App</h1>
+        <div class="card"></div>
+    </div>
+    <div class="FlexDivInf">
+        <div id="info1" class="card-info1">
+            <h2>...</h2>
+        </div>
+        <div class="card-info2">
+            <div class="subcar-info3"><p>otra cosa que no sabia que poner</p></div>
+            <div class="subcar-info3"><p>Nombre de algo</p></div>
+            <div class="subcar-info3"><p>Ip falsa 123.123.123.123.</p></div>
+        </div>
+    </div>
+    <footer class="FlexDivInf">
+        <div class="card-img">
+            <img class="imgNgeek" src="{{ url_for('static', filename='images/ngeekTipografiWithe.png') }}" alt="Ngeek Tipografía" />
+        </div>
+        <div class="card-img">
+            <img class="imgf5" src="{{ url_for('static', filename='images/f5-logo.png') }}" alt="F5 Logo" />
+        </div>
+    </footer>
+
+    <!-- Script para obtener datos del servidor Express.js -->
+    <script>
+        window.onload = function () {
+            const xhr = new XMLHttpRequest();
+            const url = "http://192.168.0.170:30808/";
+
+            xhr.open("GET", url, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const response = JSON.parse(xhr.responseText);
+                    document.getElementById("info1").innerHTML = `
+                        <h2>Mensaje</h2>
+                        <p>${response.body}</p>
+                        <p>IP: ${response.os.hostname}</p>
+                    `;
+                }
+            };
+            xhr.send();
+        };
+    </script>
+</body>
 </html>
