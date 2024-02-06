@@ -23,12 +23,33 @@ body {
   border: solid 1px black;
 }
 
-.card-info  {
+.card-info1 {
     background-color: white;
-    width: 80%;
-    height: 700px;
+    width: 45%;
+    margin-right: 5px;
+    height: 450px;
     border-radius: 14px;
     padding: 8px;
     border: solid 1px black;
     overflow-y: scroll;
+}
+.card-info2 {
+    background-color: white;
+    width: 45%;
+    margin-left: 5px;
+    height: 450px;
+    border-radius: 14px;
+    padding: 8px;
+    border: solid 1px black;
+    overflow-y: scroll;
+}
+.FlexH{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FlexDivInf{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
 }
