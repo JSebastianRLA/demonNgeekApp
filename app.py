@@ -12,4 +12,4 @@ def index():
     return render_template('index.html', imagenes=imagenes)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='192.168.0.168', port=5000)
