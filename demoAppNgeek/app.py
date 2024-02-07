@@ -11,4 +11,4 @@ def index():
     return render_template('index.html', ip_address=ip_address)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    app.run(debug=True)

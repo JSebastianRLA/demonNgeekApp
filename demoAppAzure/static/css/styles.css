@@ -1,9 +1,9 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: black;
+  background-color: #333333;
 }
 section {
-  background-color: black;
+  background-color: #333333;
 }
 
 .footer {
@@ -14,7 +14,7 @@ section {
 
 .card-img {
   display: flex;
-  background-color: black;
+  background-color: #333333;
   width: 50%;
   height: 100%;
   border-radius: 14px;
@@ -34,7 +34,7 @@ section {
 }
 
 .card-info1 {
-  background-color: black;
+  background-color: #333333;
   width: 45%;
   margin-right: 5px;
   height: 434px;
@@ -61,7 +61,7 @@ section {
   justify-content: space-between;
 }
 .subcar-info3 {
-  background-color: black;
+  background-color: #333333;
   height: 80px;
   border-radius: 14px;
   padding: 4px;
@@ -85,7 +85,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: #333333;
   text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white,
     -1px -1px 0 white;
 } */
@@ -106,7 +106,7 @@ section {
   padding: 8px;
   border-radius: 8px;
   border: solid 1px white;
-  background-color: black;
+  background-color: #333333;
   color: white;
   font-size: 16px;
 }
