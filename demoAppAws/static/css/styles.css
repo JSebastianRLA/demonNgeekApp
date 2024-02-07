@@ -46,7 +46,7 @@ section {
   color: white;
 }
 .card-info2 {
-  background-color: #000;
+  background-color: #e47911;
   width: 45%;
   margin-left: 5px;
   height: 450px;
@@ -61,7 +61,7 @@ section {
   justify-content: space-between;
 }
 .subcar-info3 {
-  background-color: #e47911;
+  background-color: black;
   height: 80px;
   border-radius: 14px;
   padding: 4px;
