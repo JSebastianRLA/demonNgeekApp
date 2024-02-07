@@ -1,14 +1,69 @@
-const toggleSwitch = document.querySelector('input[type="checkbox"]');
-const theme = document.getElementById('theme');
+document.addEventListener("DOMContentLoaded", function () {
+  var select = document.getElementById("opciones");
+  var body = document.getElementById("body");
+  var cardInfo2 = document.querySelector(".card-info2");
 
-toggleSwitch.addEventListener('change', switchTheme);
+  function cambiarColorFondo(opcionSeleccionada) {
+    switch (opcionSeleccionada) {
+      case "Ngeek":
+        body.style.backgroundColor = "#022243";
+        cardInfo2.style.backgroundColor = "#022243";
 
-function switchTheme(event) {
-    if (event.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        theme.href = 'dark-theme.css'; // Cambiar a dark-theme.css si prefieres un archivo CSS separado para el modo oscuro
-    } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        theme.href = 'styles.css'; // Cambiar a styles.css si prefieres volver al tema claro
+        break;
+      case "AWS":
+        body.style.backgroundColor = "#e47911";
+        cardInfo2.style.backgroundColor = "#e47911";
+
+        break;
+      case "Azure":
+        body.style.backgroundColor = "#333333";
+        cardInfo2.style.backgroundColor = "#333333";
+
+        break;
+      case "GCP":
+        body.style.backgroundColor = "#0F9D58";
+        cardInfo2.style.backgroundColor = "#0F9D58";
+
+        break;
+      default:
+        body.style.backgroundColor = "black";
+        cardInfo2.style.backgroundColor = "black";
     }
-}
+  }
+
+  select.addEventListener("change", function () {
+    var opcionSeleccionada = select.value;
+    cambiarColorFondo(opcionSeleccionada);
+  });
+
+  cambiarColorFondo(select.value);
+
+  var mensajeElemento = document.querySelector(".subcar-info3 p");
+
+  function actualizarMensaje(opcionSeleccionada) {
+    var mensaje;
+    switch (opcionSeleccionada) {
+      case "Ngeek":
+        mensaje = "Bienvenido a Ngeek";
+        break;
+      case "AWS":
+        mensaje = "Explorando AWS";
+        break;
+      case "Azure":
+        mensaje = "Descubriendo Azure";
+        break;
+      case "GCP":
+        mensaje = "Navegando por GCP";
+        break;
+      default:
+        mensaje = "Selecciona una opción";
+    }
+    mensajeElemento.textContent = mensaje;
+  }
+
+  select.addEventListener("change", function () {
+    var opcionSeleccionada = select.value;
+    actualizarMensaje(opcionSeleccionada);
+  });
+  actualizarMensaje(select.value);
+});
