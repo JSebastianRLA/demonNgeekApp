@@ -1,27 +1,10 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #022243;
-}
-section {
-  background-color: #022243;
-}
-
-.footer {
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-.card-img {
   display: flex;
-  background-color: #022243;
-  width: 50%;
-  height: 100%;
-  border-radius: 14px;
-  padding: 8px;
-  border: none;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .imgf5 {
@@ -29,8 +12,7 @@ section {
   height: 45px;
 }
 .imgNgeek {
-  width: 220px px;
-  height: 100px;
+  width: 105px;
 }
 
 .card-info1 {
@@ -85,7 +67,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #022243;
+  color: #4285F4;
   text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white,
     -1px -1px 0 white;
 } */
@@ -96,17 +78,21 @@ section {
   align-items: center;
 }
 .Flexfoot {
+  background-color: #d5d5d5;
+  text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 5px 0 0 0;
+  margin:  auto 0 0;
 }
 
 /* Estilos para el select */
-#opciones {
+/* #opciones {
   padding: 8px;
   border-radius: 8px;
   border: solid 1px white;
-  background-color: #022243;
+  background-color: #4285F4;
   color: white;
   font-size: 16px;
-}
+} */
