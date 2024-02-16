@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #FF9900;
+  background-color: #ff9900;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -16,7 +16,7 @@ body {
 }
 
 .card-info1 {
-  background-color: #FF9900;
+  background-color: black;
   width: 45%;
   margin-right: 5px;
   height: 434px;
@@ -28,7 +28,7 @@ body {
   color: white;
 }
 .card-info2 {
-  background-color: #FF9900;
+  background-color: #ff9900;
   width: 45%;
   margin-left: 5px;
   height: 450px;
@@ -84,7 +84,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 5px 0 0 0;
-  margin:  auto 0 0;
+  margin: auto 0 0;
 }
 
 /* Estilos para el select */
