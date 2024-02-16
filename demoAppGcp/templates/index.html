@@ -12,7 +12,7 @@
   </head>
   <body id="body">
     <!-- <select id="opciones">
-      <option value="Ngeek" selected>Ngeek</option>
+      <option value="NGEEK S.A.S." selected>NGEEK S.A.S.</option>
       <option value="AWS">AWS</option>
       <option value="Azure">Azure</option>
       <option value="GCP">GCP</option>
@@ -23,14 +23,14 @@
       <div class="card"></div>
     </div>
     <div class="FlexDivInf">
-      <div class="card-info1">
+      <!-- <div class="card-info1">
         <p>{{ headerssss }}</p>
-      </div>
+      </div> -->
       <section class="card-info2">
         <section class="subcar-info3"><p>Navegando hacia Gcp</p></section>
-        <section class="subcar-info3"><p>ip: {{ ip_address }}</p></section>
+        <section class="subcar-info3"><p>Source IP: {{ ip_address }}</p></section>
         <section class="subcar-info3">
-          <p>Nombre del host: {{ hostname }}</p>
+          <p>Hostname: {{ hostname }}</p>
         </section>
       </section>
     </div>
@@ -39,10 +39,10 @@
   <footer class="Flexfoot">
     <img
       class="imgNgeek"
-      src="{{ url_for('static', filename='images/gcpLogo.png') }}"
-      alt="Ngeek Tipografía"
+      src="{{ url_for('static', filename='images/GCP.png') }}"
+      alt="NGEEK S.A.S. Tipografía"
     />
-    <h4 style="color: black">© 2024 Ngeek</h4>
+    <h4 style="color: black">© 2024 NGEEK S.A.S.</h4>
     <img
       class="imgf5"
       src="{{ url_for('static', filename='images/f5-logo.png') }}"

@@ -8,11 +8,12 @@ body {
 }
 
 .imgf5 {
-  width: 45px;
-  height: 45px;
+  width: 90px;
+  height: 90px;
+  margin: 0 70px;
 }
 .imgNgeek {
-  width: 80px;
+  width: 20%;
 }
 
 .card-info1 {
@@ -44,6 +45,7 @@ body {
 }
 .subcar-info3 {
   background-color: black;
+  font-size: 25px;
   height: 80px;
   border-radius: 14px;
   padding: 4px;
@@ -78,13 +80,14 @@ body {
   align-items: center;
 }
 .Flexfoot {
+  border-radius: 90px 90px 0 0;
   background-color: #d5d5d5;
   text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5px 0 0 0;
-  margin:  auto 0 0;
+  padding: 20px 0 20px 0;
+  margin: auto 0 0;
 }
 
 /* Estilos para el select */
